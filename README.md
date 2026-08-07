@@ -13,7 +13,8 @@ This is a Mini Project Repo
 ## DATA UNDERSTANDING
 **Data Source**:[Kaggle](https://www.kaggle.com/datasets/uditjain13/ai-and-data-science-job-salaries-2026)
 
-**Dataset Description**:This dataset contains 2026 AI and Data Science job postings with salary, job title, experience level, location, and remote status.Used to predict if a role is "High paying" > $150k.
+**Dataset Description**:
+This dataset contains 2026 AI and Data Science job postings with salary, job title, experience level, location, and remote status.Used to predict if a role is "High paying" > $150k.
 
 **Key Columns**
 1. 'job_title':Role name
