@@ -243,7 +243,9 @@ Target Distribution:
 target
 0    83.56
 1    16.44
+
 Name: proportion, dtype: float64 %
+
 Fitting 5 folds for each of 108 candidates, totalling 540 fits
 ## CROSS VALIDATION 
 CV AUC: 0.827 +/- 0.014
