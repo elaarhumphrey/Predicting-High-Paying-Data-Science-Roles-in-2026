@@ -22,3 +22,10 @@ This is a Mini Project Repo
 1. 'location': Job location
 1. 'remote_ratio ':0,50,100
 1. 'company_size':S,M,L
+#Import the necessary libraries for cleaning and visualizing the data
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
