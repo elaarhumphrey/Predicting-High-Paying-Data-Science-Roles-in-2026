@@ -98,3 +98,17 @@ plt.show()
 1. **Business Intelligence Analysts**:Has the highest average salary, slightly above $110k.
 1. **Research Scientists and Machine Learning Engineers**:Are also top earners, both averaging around $108k-$110k.
 
+#Pie chart of the distribution of job titles in the dataset
+plt.figure(figsize=(10, 8))
+plt.pie(df['job_title'].value_counts(), labels=df['job_title'].value_counts().index, autopct='%1.1f%%', startangle=140)
+plt.title('Distribution of Job Titles')
+plt.axis('equal')
+plt.show()
+
+<img width="841" height="662" alt="image" src="https://github.com/user-attachments/assets/679e0445-41ff-4bdb-8127-aa461fb08a15" />
+
+### Findings
+
+1. The job market in this dataset is dominated by Data Scientists, Data Engineers, Data Analysts, and ML Engineer roles, while specialized roles like CV Engineer, Manager, and LLM Engineer are the least common.
+1. **Highly imbalanced distribution**:A few roles dominate, while most roles are small slices thus making them valuable in the future and this might make their pay be of higher.
+
