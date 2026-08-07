@@ -44,3 +44,7 @@ df.duplicated().sum()
 df.drop_duplicates(inplace=True)
 df.duplicated().sum()
 #### Handling duplicates
+#Check for duplicate rows in the dataset and remove them if necessary
+df.duplicated().sum()
+df.drop_duplicates(inplace=True)
+df.duplicated().sum()
