@@ -151,3 +151,20 @@ plt.grid()
 * **3-5 years**:First dots starts crossing $150k.
 * **5+ years**:Majority of >$150k salaries appear here density of dots above $150k increases a lot.
 * **Peak High Paying Zone: 8-20 years experience**has the most concentration of dots above $200k and $300k.
+
+#Pair plot of the numerical features in the dataset
+sns.pairplot(df[['years_experience', 'salary_usd']])
+plt.show()
+
+<img width="496" height="496" alt="image" src="https://github.com/user-attachments/assets/5f4757be-9a98-4644-a938-8008df871b82" />
+
+## Findings
+#### 1. **Distribution of years of experience :Top left Histogram**
+* **Shape**:Right-skewed but peaks around 6-10 years.Most peaple in the dataset have 5-12 years of experience.
+* **Range**:0-23 years 
+* **Very few peaple**:Above 18 years and at 0 years.There is a smaller spike at 0,likely new grades/interns.
+
+#### 2. **Distribution of salary_usd : Bottom Right Histogram**
+* **Shape**:Highly right-skewed.Peak is around $60k-$100k.
+* **Long tail**:Salaries stretch out to $350k.
+* **Most common salary**:$70k-$90k.High Paying >$150k is in the thin right tail.
