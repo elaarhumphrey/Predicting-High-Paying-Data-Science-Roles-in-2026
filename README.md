@@ -168,3 +168,25 @@ plt.show()
 * **Shape**:Highly right-skewed.Peak is around $60k-$100k.
 * **Long tail**:Salaries stretch out to $350k.
 * **Most common salary**:$70k-$90k.High Paying >$150k is in the thin right tail.
+## MODELLING RESULTS
+Target Distribution:
+target
+0    83.56
+1    16.44
+Name: proportion, dtype: float64 %
+Best Params: {'logreg__C': 1, 'logreg__penalty': 'l2'}
+Best CV AUC: 0.8433900775561185
+
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.94      0.73      0.82       836
+           1       0.36      0.77      0.49       164
+
+    accuracy                           0.74      1000
+   macro avg       0.65      0.75      0.66      1000
+weighted avg       0.85      0.74      0.77      1000
+
+Test ROC AUC: 0.8273500408449062
+c:\Users\frkuhn\anaconda3\envs\HAMPHOLICS\Lib\site-packages\sklearn\linear_model\_logistic.py:1403: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
