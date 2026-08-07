@@ -11,3 +11,14 @@ This is a Mini Project Repo
 1. **Identify key drivers**:Determine the top 3 factors that most influence whether a role is high paying.
 1. **Provide actionable insights**:Offer recommendations for job seekers, HR teams and companies on how to position roles and careers for competitive compensation in 2026.
 ## DATA UNDERSTANDING
+**Data Source**:[Kaggle](https://www.kaggle.com/datasets/uditjain13/ai-and-data-science-job-salaries-2026)
+
+**Dataset Description**:This dataset contains 2026 AI and Data Science job postings with salary, job title, experience level, location, and remote status.Used to predict if a role is "High paying" > $150k.
+
+**Key Columns**
+1. 'job_title':Role name
+1. 'experience_level':EN,MI,SE,EX
+1. 'salary':Annual salary in USD
+1. 'location': Job location
+1. 'remote_ratio ':0,50,100
+1. 'company_size':S,M,L
