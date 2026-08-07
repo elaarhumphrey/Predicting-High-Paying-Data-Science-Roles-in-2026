@@ -48,3 +48,5 @@ df.duplicated().sum()
 df.duplicated().sum()
 df.drop_duplicates(inplace=True)
 df.duplicated().sum()
+#Check the data types of each column in the dataset
+print(df.dtypes)
