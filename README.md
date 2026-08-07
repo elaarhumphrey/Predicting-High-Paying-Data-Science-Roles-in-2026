@@ -81,3 +81,11 @@ plt.show()
 
 1. **Most AI and Data Science jobs pay between $40k-$100k**:High paying jobs > $150k are uncommon and form a long right tail,making them a distinct minority class worth predicting.
 1. **The market rate for most AI and Data Science roles sits between $50k-$100k**:Paying >$150k, puts the company in the top ~15-20% of payers which might end up making the company run bankrupt.
+
+#Bar plot of the average salary by job title
+sns.barplot(x='job_title', y='salary_usd', data=df, estimator=np.mean, ci=None)
+plt.title('Average Salary by Job Title')
+plt.xlabel('Job Title')
+plt.ylabel('Average Salary in USD')
+plt.xticks(rotation=45)
+plt.show()
