@@ -177,6 +177,10 @@ Name: proportion, dtype: float64 %
 Best Params: {'logreg__C': 1, 'logreg__penalty': 'l2'}
 Best CV AUC: 0.8433900775561185
 
+<img width="539" height="455" alt="image" src="https://github.com/user-attachments/assets/a0d8b02c-6f24-4976-be8d-e469e55a8bc9" />
+
+<img width="691" height="547" alt="image" src="https://github.com/user-attachments/assets/9b50dc47-31b9-4785-aae6-1802fd7fb346" />
+
 === Classification Report ===
               precision    recall  f1-score   support
 
