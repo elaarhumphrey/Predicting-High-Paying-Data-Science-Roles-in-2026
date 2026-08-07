@@ -74,4 +74,5 @@ plt.xlabel('Salary in USD')
 plt.ylabel('Frequency')
 plt.grid(axis='y', alpha=0.75)
 plt.show()
+<img width="850" height="547" alt="image" src="https://github.com/user-attachments/assets/323b14e5-160b-4e67-be25-644652393a28" />
 
