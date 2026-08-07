@@ -169,6 +169,8 @@ plt.show()
 * **Long tail**:Salaries stretch out to $350k.
 * **Most common salary**:$70k-$90k.High Paying >$150k is in the thin right tail.
 ## MODELLING RESULTS
+
+## LOGISTIC REGRESSION
 Target Distribution:
 target
 0    83.56
@@ -195,7 +197,7 @@ Test ROC AUC: 0.8273500408449062
 c:\Users\frkuhn\anaconda3\envs\HAMPHOLICS\Lib\site-packages\sklearn\linear_model\_logistic.py:1403: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
   warnings.warn(
 
-## LINEAR REGRESSION RESULTS
+## LINEAR REGRESSION 
 === Linear Regression Results ===
 R2 Score: 0.301
 MAE: $35,966
@@ -234,3 +236,10 @@ CV R2 Score: 0.330 +/- 0.018
 
 Predicted Salary: $101,824
 
+## RANDOM FOREST
+Target Distribution:
+target
+0    83.56
+1    16.44
+Name: proportion, dtype: float64 %
+Fitting 5 folds for each of 108 candidates, totalling 540 fits
