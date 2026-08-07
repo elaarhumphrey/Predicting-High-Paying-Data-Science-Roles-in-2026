@@ -66,5 +66,12 @@ print(df.dtypes)
 #### Multivariate EDA
 1. Pair plot
 1. Heatmap
-
+#Histogram of the 'Salary_USD' column
+plt.figure(figsize=(10, 6))
+plt.hist(df['salary_usd'], bins=30, color='skyblue', edgecolor='black')
+plt.title('Distribution of Salary in USD')
+plt.xlabel('Salary in USD')
+plt.ylabel('Frequency')
+plt.grid(axis='y', alpha=0.75)
+plt.show()
 
