@@ -89,3 +89,12 @@ plt.xlabel('Job Title')
 plt.ylabel('Average Salary in USD')
 plt.xticks(rotation=45)
 plt.show()
+
+<img width="621" height="593" alt="image" src="https://github.com/user-attachments/assets/ee8d7236-e3b6-4e79-9aa6-f6be770d5768" />
+
+### Findings
+
+1. **Job title matters a lot**:Research, ML, and BI roles average > $108k, while Analysts, and Analytics Engineer roles average > $80k.This means job_title will likely be a strong predictor for the salary given to the employees in 2026
+1. **Business Intelligence Analysts**:Has the highest average salary, slightly above $110k.
+1. **Research Scientists and Machine Learning Engineers**:Are also top earners, both averaging around $108k-$110k.
+
