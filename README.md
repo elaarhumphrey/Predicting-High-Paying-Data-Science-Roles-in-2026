@@ -250,3 +250,50 @@ Name: proportion, dtype: float64 %
 Fitting 5 folds for each of 108 candidates, totalling 540 fits
 ## CROSS VALIDATION 
 CV AUC: 0.827 +/- 0.014
+
+##  Conclusions And Recommendations
+
+### A. Conclusions
+
+Based on the EDA and modeling of AI/Data Science roles in 2026:
+
+1. **Experience is the primary salary driver**  
+   Salary increases with `years_experience`, but the jump is non-linear. The biggest leap happens after **5 years**.  
+   The "peak earning zone" is **8-20 years**, where most salaries of `$200k-$300k` occur.  
+   Roles with `<3 years` experience rarely exceed `$150k`.
+
+2. **Job Title defines pay tiers**  
+   The market is dominated by **Data Scientist, Data Engineer, Data Analyst, and ML Engineer**.  
+   However, the highest pay is not in the most common roles.  
+   - **Top paying**: `Business Intelligence Analyst`, `ML Engineer`, `Research Scientist`, `Data Science Manager`  
+   - **Lowest paying**: `Data Analyst`, `Analytics Engineer`, `BI Analyst`  
+   Emerging roles like **LLM Engineer** already command premium salaries despite being rare at `4.8%`.
+
+3. **Company context matters**  
+   - **Positive drivers**: `Full-time roles` and `Large companies`  
+   - **Negative drivers**: `Part-time` and `Small companies`  
+   These were among the strongest predictors in both classification and regression models.
+
+4. **High-paying roles are a minority and hard to predict perfectly**  
+   - Only **16.44%** of jobs are >$150k → class imbalance
+   - **Classification Model**: ROC AUC = `0.827`, Accuracy = `74%`. High recall `0.77` but low precision `0.36` for high-paying class.
+   - **Regression Model**: R² = `0.30`, MAE = `$35,966`. ~70% of salary variance is unexplained by current features.
+
+---
+
+### B. Recommendations
+
+#### 1. For Job Seekers
+- **Target high-leverage titles**: Prioritize career paths toward `Data Science Manager`, `LLM Engineer`, `ML Engineer`, and `Research Scientist`.
+- **Invest in 5+ years of experience**: This is the critical threshold to break into the >$150k bracket. Focus on specialization between years 3-8.
+- **Aim for Full-time roles at Large companies**: These two factors significantly increase odds of high pay.
+
+#### 2. For Companies & Hiring Managers
+- **Pay premiums for emerging AI skills**: Roles like `LLM Engineer` are rare now but already top paid. Early investment helps attract talent.
+- **Benchmark against title + experience bands**: Use the 8-20 year experience band as the guide for senior/principal compensation. 
+- **Address the analyst pay gap**: `Data Analyst` and `BI Analyst` roles are common but lowest paid. Create upskilling paths to ML/Research to retain talent.
+
+#### 3. For Model & Analysis Improvement
+- **Handle class imbalance**: Use techniques like **SMOTE** or `class_weight='balanced'` to improve precision on "high paying" predictions.
+- **Use non-linear models**: Try **XGBoost, Random Forest, or Gradient Boosting** to better capture interactions between features.
+- **Add missing features**: Include `location/country`, `company industry`, and `remote vs on-site` to improve R² and prediction accuracy.
