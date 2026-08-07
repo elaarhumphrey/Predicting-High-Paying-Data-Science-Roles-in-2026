@@ -39,3 +39,7 @@ df.describe()
 * checking datatypes assigned to the columns
 
 #### Handling missing values
+#Check for duplicate rows in the dataset and remove them if necessary
+df.duplicated().sum()
+df.drop_duplicates(inplace=True)
+df.duplicated().sum()
