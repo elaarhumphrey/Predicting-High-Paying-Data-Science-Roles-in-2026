@@ -194,3 +194,43 @@ weighted avg       0.85      0.74      0.77      1000
 Test ROC AUC: 0.8273500408449062
 c:\Users\frkuhn\anaconda3\envs\HAMPHOLICS\Lib\site-packages\sklearn\linear_model\_logistic.py:1403: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
   warnings.warn(
+
+## LINEAR REGRESSION RESULTS
+=== Linear Regression Results ===
+R2 Score: 0.301
+MAE: $35,966
+RMSE: $46,119
+CV R2 Score: 0.330 +/- 0.018
+
+<img width="721" height="547" alt="image" src="https://github.com/user-attachments/assets/06a9a4c0-882c-434e-b510-85cb562a5c52" />
+
+<img width="714" height="547" alt="image" src="https://github.com/user-attachments/assets/73f07ebd-88bd-4321-8377-8f81850f79d7" />
+
+=== Top 10 Features Increasing Salary ===
+                                Feature   Coefficient
+0                      years_experience  27754.648429
+9                job_title_LLM Engineer  16246.343627
+21            employment_type_Full-time  16158.380940
+16                       company_size_L  15696.331643
+7        job_title_Data Science Manager  12941.315724
+11  job_title_Machine Learning Engineer  12008.655097
+1                 job_title_AI Engineer  10175.789310
+19             employment_type_Contract   8902.207907
+4    job_title_Computer Vision Engineer   7812.810752
+12         job_title_Research Scientist   7251.502154
+
+=== Top 10 Features Decreasing Salary ===
+                                    Feature   Coefficient
+14                    experience_bucket_Mid  -1193.050610
+17                           company_size_M  -1195.166575
+6                   job_title_Data Engineer  -1348.788706
+15                 experience_bucket_Senior  -3058.872426
+8                  job_title_Data Scientist  -5982.836052
+2              job_title_Analytics Engineer  -9947.304192
+18                           company_size_S -14501.165069
+3   job_title_Business Intelligence Analyst -24658.063167
+5                    job_title_Data Analyst -24910.465941
+22                employment_type_Part-time -27192.329702
+
+Predicted Salary: $101,824
+
