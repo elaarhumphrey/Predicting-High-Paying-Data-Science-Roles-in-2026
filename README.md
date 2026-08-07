@@ -10,3 +10,4 @@ This is a Mini Project Repo
 1. **Build predictive models**:Develop and compare classification models to predict salary level using role and profile features. 
 1. **Identify key drivers**:Determine the top 3 factors that most influence whether a role is high paying.
 1. **Provide actionable insights**:Offer recommendations for job seekers, HR teams and companies on how to position roles and careers for competitive compensation in 2026.
+## DATA UNDERSTANDING
