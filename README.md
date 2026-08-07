@@ -32,3 +32,10 @@ df = pd.read_csv('AI AND DS.csv')
 df.head(10)
 df.info()
 df.describe()
+## DATA CLEANING
+* Handling missing values
+* Handling duplicates
+* Handling outliers
+* checking datatypes assigned to the columns
+
+#### Handling missing values
