@@ -50,3 +50,21 @@ df.drop_duplicates(inplace=True)
 df.duplicated().sum()
 #Check the data types of each column in the dataset
 print(df.dtypes)
+## EXPLORATORY DATA ANALYSIS
+
+#### Univariate EDA
+1. Histogram
+1. Bar graph
+1. pie Chart
+
+#### Bivariate EDA
+1. Box plot
+1. Count plot
+1. Scatter plot
+
+
+#### Multivariate EDA
+1. Pair plot
+1. Heatmap
+
+
