@@ -291,9 +291,5 @@ Based on the EDA and modeling of AI/Data Science roles in 2026:
 #### 2. For Companies & Hiring Managers
 - **Pay premiums for emerging AI skills**: Roles like `LLM Engineer` are rare now but already top paid. Early investment helps attract talent.
 - **Benchmark against title + experience bands**: Use the 8-20 year experience band as the guide for senior/principal compensation. 
-- **Address the analyst pay gap**: `Data Analyst` and `BI Analyst` roles are common but lowest paid. Create upskilling paths to ML/Research to retain talent.
+- **Address the analyst pay gap**: `Data Analyst` and `BI Analyst` roles are common but lowest paid. Create upskilling paths to ML/Research to retain talent
 
-#### 3. For Model & Analysis Improvement
-- **Handle class imbalance**: Use techniques like **SMOTE** or `class_weight='balanced'` to improve precision on "high paying" predictions.
-- **Use non-linear models**: Try **XGBoost, Random Forest, or Gradient Boosting** to better capture interactions between features.
-- **Add missing features**: Include `location/country`, `company industry`, and `remote vs on-site` to improve R² and prediction accuracy.
