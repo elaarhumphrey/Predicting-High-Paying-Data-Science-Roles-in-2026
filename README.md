@@ -112,3 +112,42 @@ plt.show()
 1. The job market in this dataset is dominated by Data Scientists, Data Engineers, Data Analysts, and ML Engineer roles, while specialized roles like CV Engineer, Manager, and LLM Engineer are the least common.
 1. **Highly imbalanced distribution**:A few roles dominate, while most roles are small slices thus making them valuable in the future and this might make their pay be of higher.
 
+
+#Box plot of the salary distribution by job title
+plt.figure(figsize=(12, 6))
+sns.boxplot(x='job_title', y='salary_usd', data=df)
+plt.title('Salary Distribution by Job Title')
+plt.xlabel('Job Title')
+plt.ylabel('Salary')
+plt.xticks(rotation=45)
+plt.show()
+
+<img width="1037" height="686" alt="image" src="https://github.com/user-attachments/assets/7fd99b71-5330-4f64-bd5a-cecd6e89a936" />
+
+### Findings
+1. Management + Emerging AI roles have the highest typical pay.Analyst roles have the lowest typical pay,
+1. Even though Data Engineer median is mid ~$95k, it has huge upside.Data Science Manager has both high median and highest max.
+
+#Scatter plot of salary vs. years of experience
+plt.figure(figsize=(10, 6))
+plt.scatter(df['years_experience'], df['salary_usd'], alpha=0.5)
+plt.title('Salary vs. Years of Experience')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary in USD')
+plt.grid()
+
+<img width="876" height="547" alt="image" src="https://github.com/user-attachments/assets/9ee37b05-bc05-454a-acbd-19c166dd783d" />
+
+
+### Findings
+#### 1. ***Overall Trend:Positive but Non-Linear***
+* **As years of experience increase, salary tends to increase**.The cloud of points shifts upward from left to right.
+* **0-3 years**:Most salaries are clustered between $20k-$120k .Very few points above $150k.
+* **5-10 years**:Big jump .Salary range expands to $30k-$220k.Much higher density above $100k.
+* **10-20+ years**:Highest salaries appear here .Points reach $250k-$360k.But also still many points in $60k-$120k range.
+
+#### 1. ***High Paying >$150k Threshold***
+* **Below 3 years experience**:Almost no dots above $150k.Rare outliers only.
+* **3-5 years**:First dots starts crossing $150k.
+* **5+ years**:Majority of >$150k salaries appear here density of dots above $150k increases a lot.
+* **Peak High Paying Zone: 8-20 years experience**has the most concentration of dots above $200k and $300k.
