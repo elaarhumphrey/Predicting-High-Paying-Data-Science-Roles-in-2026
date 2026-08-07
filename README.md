@@ -30,4 +30,5 @@ import seaborn as sns
 #Load the dataset into a pandas DataFrame
 df = pd.read_csv('AI AND DS.csv')
 df.head(10)
-
+df.info()
+df.describe()
